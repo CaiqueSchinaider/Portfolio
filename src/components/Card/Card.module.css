@@ -1,0 +1,26 @@
+.ContainerCard {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(9, 9, 65);
+  border-radius: 20px;
+  overflow: hidden;
+}
+button {
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  color: white;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    to right,
+    rgb(158, 14, 194),
+    rgb(99, 48, 99),
+    blue
+  );
+  transition: 0.2s ease;
+}
+button:active {
+  transform: scale(1.1);
+}
