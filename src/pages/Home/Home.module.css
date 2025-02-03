@@ -10,16 +10,19 @@
   display: flex;
   align-items: center;
   width: auto;
-  height: 800px;
+  height: auto;
   border-radius: 50px 50px 0px 0px;
+  padding-bottom: 20px;
 }
 .Title {
   font-size: clamp(25px, 3vw, 4rem);
   text-align: center;
+  cursor: default;
   font-family: "Bebas Neue", sans-serif;
   margin-bottom: 0px;
 }
 .DescriptionContainer {
+  cursor: default;
   width: 90%;
   font-family: "Arial", sans-serif;
   font-weight: lighter;
@@ -27,7 +30,27 @@
   text-align: center;
   margin-top: 5px;
 }
-.AttributesList {
+.AttributesList,
+.ProjectsNavigation {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 50px;
+}
+
+.ProjectsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ProjectsTitle {
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  cursor: default;
+  border-top: 3px solid white;
+  font-family: "Bebas Neue", sans-serif;
+  width: 90%;
+  font-size: clamp(20px, 3vw, 4rem);
 }

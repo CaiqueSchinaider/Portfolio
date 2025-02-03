@@ -22,7 +22,27 @@ function Header() {
         <img src="/react.png" alt="react" className={styles.IconReact} />
       </div>
 
-      <nav className={styles.Navigation}></nav>
+      <nav className={styles.Navigation}>
+        <a
+          href="https://github.com/CaiqueSchinaider"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="github.png" alt="github" className={styles.IconGithub} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/caique-schinaider-rufino-viana-a17b35273/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="linkedin.png"
+            alt="linkedin
+          "
+            className={styles.IconLinkedin}
+          />
+        </a>
+      </nav>
     </main>
   );
 }
