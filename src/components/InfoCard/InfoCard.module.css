@@ -2,18 +2,18 @@
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 400px;
+  height: 300px;
   background-color: rgb(15, 15, 124);
 }
 .ImageBox {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 30%;
+  height: 40%;
   background-color: rgb(80, 29, 29);
 }
 .CardDescription {
   width: 100%;
-  height: 70%;
+  height: 60%;
   color: white;
 }

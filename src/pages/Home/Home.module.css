@@ -1,22 +1,33 @@
 .MainContainer {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: #000000;
-  color: white;
 }
-.ContainerEyes {
-  animation: show 120s ease forwards;
+.AboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #0f0f0f;
+  color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 800px;
+  border-radius: 50px 50px 0px 0px;
 }
-
-@keyframes show {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.Title {
+  font-size: clamp(25px, 3vw, 4rem);
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  margin-bottom: 0px;
+}
+.DescriptionContainer {
+  width: 90%;
+  font-family: "Arial", sans-serif;
+  font-weight: lighter;
+  font-size: clamp(25px, 1.3vw, 4rem);
+  text-align: center;
+  margin-top: 5px;
+}
+.AttributesList {
+  display: flex;
+  justify-content: center;
 }
