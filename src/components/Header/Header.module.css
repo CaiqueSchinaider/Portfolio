@@ -119,9 +119,10 @@
     transform: scale(1.1);
   }
 }
-@media screen and (width < 1155px) {
+@media screen and (width < 1155px) and (width >= 500px) {
   .HeaderContainer {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
@@ -146,92 +147,22 @@
   .PresentationContainer h1 {
     font-family: "Bebas Neue", sans-serif;
     cursor: default;
-    font-size: clamp(25px, 5vw, 4rem);
+    font-size: clamp(2rem, 5vw, 4rem);
     margin-bottom: 0px;
   }
   .PresentationContainer p {
-    width: 600px;
+    width: clamp(300px, 60vw, 600px);
     cursor: default;
     font-family: "Space Grotesk", serif;
-    font-size: clamp(25px, 1.2vw, 4rem);
+    font-size: clamp(20px, 1.2vw, 4rem);
+    text-align: justify;
     margin-top: 8px;
     z-index: 2;
   }
-
-  .IconJavascript {
-    position: absolute;
-    left: 40px;
-    width: 25vw;
-  }
-  .IconCss {
-    position: absolute;
-    width: 20vw;
-    right: 340px;
-    margin-right: 7px;
-  }
-  .IconHtml {
-    width: 20vw;
-    margin-right: 7px;
-    left: 320px;
-    position: absolute;
-  }
-  .IconReact {
-    width: 20vw;
-
-    background-color: rgb(15, 15, 15);
-    border-radius: 20px;
-    padding: 7px 5px;
-    position: absolute;
-  }
-  .IconCss,
-  .IconReact {
-    animation: down 15s linear infinite;
-    opacity: 0.1;
-    z-index: 1;
-    top: 0px;
-  }
-  .IconJavascript,
-  .IconHtml {
-    animation: up 15s linear infinite;
-    opacity: 0.1;
-    z-index: 1;
-    top: 0px;
+  .IconsContainer {
+    display: none;
   }
 
-  @keyframes up {
-    0% {
-      transform: translateY(0px);
-    }
-    25% {
-      transform: translateY(50px);
-    }
-    50% {
-      transform: translateY(0px);
-    }
-    75% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  @keyframes down {
-    0% {
-      transform: translateY(0px);
-    }
-    25% {
-      transform: translateY(-10px);
-    }
-    50% {
-      transform: translateY(0px);
-    }
-    75% {
-      transform: translateY(50px);
-    }
-    100% {
-      transform: translateY(0px);
-    }
-  }
   .Navigation {
     display: flex;
     flex-direction: column;
@@ -254,4 +185,82 @@
   .IconLinkedin:hover {
     transform: scale(1.1);
   }
+}
+@media screen and (width < 500px) {
+  .HeaderContainer {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+    flex-direction: column;
+    background-image: linear-gradient(
+      to right,
+      #03032e,
+      #10107c,
+      #141491,
+      #10107c,
+      #03032e
+    );
+    width: 100vw;
+    height: 300px;
+    color: white;
+  }
+  .PresentationContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .PresentationContainer h1 {
+    font-family: "Bebas Neue", sans-serif;
+    cursor: default;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 0px;
+  }
+  .PresentationContainer p {
+    width: auto;
+    cursor: default;
+    font-family: "Space Grotesk", serif;
+    font-size: clamp(20px, 1.2vw, 4rem);
+    text-align: justify;
+    margin-top: 8px;
+    z-index: 2;
+  }
+  .IconsContainer {
+    display: none;
+  }
+
+  .Navigation {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: end;
+    top: 0px;
+    right: 0px;
+    justify-content: center;
+    width: 120px;
+    height: 55px;
+    border-radius: 0px 0px 0px 10px;
+    gap: 20px;
+    background-color: black;
+
+    z-index: 1002;
+  }
+  .IconGithub,
+  .IconLinkedin {
+    width: 40px;
+    filter: invert(100);
+    border-radius: 50px;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+
+  .IconGithub:hover,
+  .IconLinkedin:hover {
+    transform: scale(1.1);
+  }
+}
+.PresentationContainer h1 {
+  text-shadow: 0px 0px 5px #ffffffc5;
 }

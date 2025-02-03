@@ -4,7 +4,7 @@ function InfoCard({ source, title, description }) {
   return (
     <section className={styles.ContainerInfoCard}>
       <picture className={styles.ImageBox}>
-        <img src={source} />
+        <img src={source} className={styles.ImageCard} />
       </picture>
       <div className={styles.CardDescription}>
         <h1>{title}</h1>

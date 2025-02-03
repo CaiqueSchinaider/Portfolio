@@ -15,11 +15,12 @@
   padding-bottom: 20px;
 }
 .Title {
-  font-size: clamp(25px, 3vw, 4rem);
+  font-size: clamp(2rem, 3vw, 4rem);
   text-align: center;
   cursor: default;
   font-family: "Bebas Neue", sans-serif;
   margin-bottom: 0px;
+  color: #b30f0f;
 }
 .DescriptionContainer {
   cursor: default;

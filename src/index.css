@@ -16,6 +16,9 @@ body {
     #10107c,
     #03032e
   );
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
 }
 
 code {
