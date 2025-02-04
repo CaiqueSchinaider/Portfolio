@@ -25,7 +25,7 @@
   .PresentationContainer h1 {
     font-family: "Bebas Neue", sans-serif;
     cursor: default;
-    font-size: clamp(25px, 5vw, 4rem);
+    font-size: clamp(25px, 5vw, 4.4rem);
     margin-bottom: 0px;
   }
   .PresentationContainer p {
@@ -37,18 +37,18 @@
   }
 
   .IconJavascript {
-    width: 73px;
+    width: 83px;
   }
   .IconCss {
-    width: 60px;
+    width: 70px;
     margin-right: 7px;
   }
   .IconHtml {
-    width: 60px;
+    width: 70px;
     margin-right: 7px;
   }
   .IconReact {
-    width: 50px;
+    width: 60px;
     background-color: rgb(15, 15, 15);
     border-radius: 20px;
     padding: 7px 5px;
