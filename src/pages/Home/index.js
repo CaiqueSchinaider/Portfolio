@@ -61,7 +61,7 @@ function Home() {
               <InfoCard
                 title="LifeScore"
                 description="An idea currently in development is LifeScore, a project for an application aimed at motivating people to maintain a solid routine. It incorporates RPG elements, such as routine classes, trophies, virtual cosmetics, etc., to reward those who successfully complete their tasks."
-                source={"/lifescore.png"}
+                source={"/life.png"}
               />
             </a>
           </nav>
