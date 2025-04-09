@@ -16,6 +16,7 @@
   margin-bottom: 5px;
   margin-left: 30px;
   cursor: default;
+  color: rgb(179, 15, 15);
 }
 
 .IconEmail,
@@ -29,7 +30,8 @@
 .EmailContainer {
   display: flex;
   align-items: center;
-  background-color: red !important;
+
+  border-radius: 5px;
   width: 400px;
   margin-left: 15px;
   gap: 10px;
@@ -40,7 +42,7 @@ p {
 @media screen and (width < 400px) {
   .TelephoneNumberContainer,
   .EmailContainer {
-    width: 300px !;
+    width: 300px !important;
   }
   .IconEmail,
   .IconTelephone {
