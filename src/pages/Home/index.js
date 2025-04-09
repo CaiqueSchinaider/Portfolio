@@ -1,12 +1,13 @@
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Banner from "../../components/Banner";
 import InfoCard from "../../components/InfoCard";
+import { motion } from "framer-motion";
 import styles from "./Home.module.css";
 
 function Home() {
   return (
     <main className={styles.MainContainer}>
-      <Header />
+      <Banner />
       <section className={styles.AboutMeContainer}>
         <h1 className={styles.Title}>A little about me</h1>
         <p className={styles.DescriptionContainer}>
@@ -15,28 +16,39 @@ function Home() {
           a world of its own, where my ideas can be put on the table, or rather,
           into lines of code.
         </p>
-        <div className={styles.AttributesList}>
-          <InfoCard
-            title="Where I Am Now?"
-            description="I'm in the process of acquiring experiences that drive my growth exponentially, having had the opportunity at 16 to work at Offerwise as a Help Desk, a company that allowed me to see firsthand how this entire world operates."
-            source={"/question.png"}
-          />
-          <InfoCard
-            title="How I Got Started at Offerwise"
-            description="I quickly adapted to the work in a methodical way, diving into hardware and software. I assisted employees with background issues, ensuring a smooth workflow. This drove me to create projects that simplify processes or add value to people."
-            source={"/offerwise.png"}
-          />
-          <InfoCard
-            title="My Objective"
-            description="My objective is to gain more experience in this field, further solidifying all the knowledge I've gained, while evolving and adding value wherever I go. Seeing my effort return as progress is my fuel."
-            source={"/goal.png"}
-          />
-          <InfoCard
-            title="Education"
-            description="I took free online courses and received guidance from people close to me who were already working in the field. This motivated me to dedicate myself further to my studies. My goal is to professionalize myself and enroll in an educational institution to expand my knowledge."
-            source={"/education.png"}
-          />
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.2 }}
+        >
+          <div className={styles.AttributesList}>
+            <InfoCard
+              title="Where I Am Now?"
+              description="I'm in the process of acquiring experiences that drive my growth exponentially, having had the opportunity at 16 to work at Offerwise as a Help Desk, a company that allowed me to see firsthand how this entire world operates."
+              source={"/question.png"}
+              tabIndexValue="1"
+            />
+            <InfoCard
+              title="How I Got Started at Offerwise"
+              description="I quickly adapted to the work in a methodical way, diving into hardware and software. I assisted employees with background issues, ensuring a smooth workflow. This drove me to create projects that simplify processes or add value to people."
+              source={"/offerwise.png"}
+              tabIndexValue="2"
+            />
+            <InfoCard
+              title="My Objective"
+              description="My objective is to gain more experience in this field, further solidifying all the knowledge I've gained, while evolving and adding value wherever I go. Seeing my effort return as progress is my fuel."
+              source={"/goal.png"}
+              tabIndexValue="3"
+            />
+            <InfoCard
+              title="Education"
+              description="I took free online courses and received guidance from people close to me who were already working in the field. This motivated me to dedicate myself further to my studies. My goal is to professionalize myself and enroll in an educational institution to expand my knowledge."
+              source={"/education.png"}
+              tabIndexValue="4"
+            />
+          </div>
+        </motion.div>
         <section className={styles.ProjectsList}>
           <h1 className={styles.ProjectsTitle}> Projects</h1>
           <nav className={styles.ProjectsNavigation}>

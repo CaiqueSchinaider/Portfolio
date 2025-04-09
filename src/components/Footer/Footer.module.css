@@ -29,11 +29,26 @@
 .EmailContainer {
   display: flex;
   align-items: center;
-
+  background-color: red !important;
   width: 400px;
   margin-left: 15px;
   gap: 10px;
 }
 p {
   margin: 10px;
+}
+@media screen and (width < 400px) {
+  .TelephoneNumberContainer,
+  .EmailContainer {
+    width: 300px !;
+  }
+  .IconEmail,
+  .IconTelephone {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+  }
+  p {
+    font-size: 0.7rem !important;
+  }
 }

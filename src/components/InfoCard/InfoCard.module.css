@@ -1,5 +1,5 @@
 @media screen and (width >= 800px) {
-  .ContainerInfoCard {
+  .InfoCardContainer {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -42,7 +42,7 @@
   }
 }
 @media screen and (width < 800px) {
-  .ContainerInfoCard {
+  .InfoCardContainer {
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -85,6 +85,6 @@
     margin-left: 15px;
   }
 }
-.ContainerInfoCard:hover {
+.InfoCardContainer:hover {
   transform: scale(1.07);
 }
