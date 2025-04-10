@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: start;
   width: 100vw;
-  height: 260px;
+  height: 350px;
   gap: 10px;
   margin: 0px;
   overflow: hidden;
@@ -27,12 +27,13 @@
   filter: invert(100);
 }
 .TelephoneNumberContainer,
-.EmailContainer {
+.EmailContainer,
+.AddressContainer {
   display: flex;
   align-items: center;
 
   border-radius: 5px;
-  width: 400px;
+  width: 500px;
   margin-left: 15px;
   gap: 10px;
 }
@@ -41,7 +42,8 @@ p {
 }
 @media screen and (width < 400px) {
   .TelephoneNumberContainer,
-  .EmailContainer {
+  .EmailContainer,
+  .AddressContainer {
     width: 300px !important;
   }
   .IconEmail,
