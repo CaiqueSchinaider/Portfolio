@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap");
 
 body {
+  user-select: none;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

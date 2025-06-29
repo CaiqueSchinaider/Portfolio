@@ -13,13 +13,13 @@ function Banner() {
       </div>
       <div className={styles.IconsContainer}>
         <img
-          src="/javascript.png"
+          src="/javascript.webp"
           alt="javascript"
           className={styles.IconJavascript}
         />
         <img src="/css.webp" alt="css" className={styles.IconCss} />
-        <img src="/html.png" alt="html" className={styles.IconHtml} />
-        <img src="/react.png" alt="react" className={styles.IconReact} />
+        <img src="/html.webp" alt="html" className={styles.IconHtml} />
+        <img src="/react.webp" alt="react" className={styles.IconReact} />
       </div>
 
       <nav className={styles.Navigation}>
@@ -28,7 +28,7 @@ function Banner() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="github.png" alt="github" className={styles.IconGithub} />
+          <img src="github.webp" alt="github" className={styles.IconGithub} />
         </a>
         <a
           href="https://www.linkedin.com/in/caique-schinaider-rufino-viana-a17b35273/"
@@ -36,7 +36,7 @@ function Banner() {
           rel="noopener noreferrer"
         >
           <img
-            src="linkedin.png"
+            src="linkedin.webp"
             alt="linkedin
           "
             className={styles.IconLinkedin}

@@ -5,24 +5,33 @@ function Footer() {
     <section className={styles.ContactContainer}>
       <h1 className={styles.ContactTitle}>Contact</h1>
       <div className={styles.EmailContainer}>
-        <img src="o-email.png" alt="email" className={styles.IconEmail} />{" "}
-        <p>caiqueschinaiderrufinoviana@gmail.com</p>
+        <img
+          src="/contact/email.webp"
+          alt="email"
+          className={styles.IconEmail}
+        />{" "}
+        <p className={styles.Paragraph}>
+          caiqueschinaiderrufinoviana@gmail.com
+        </p>
       </div>
       <div className={styles.TelephoneNumberContainer}>
         <img
-          src=" /contact/telephone.png"
+          src=" /contact/telephone.webp"
           alt="telephone"
           className={styles.IconTelephone}
         />{" "}
-        <p>55+ (31) 99152-2505</p>
+        <p className={styles.Paragraph}>55+ (31) 99152-2505</p>
       </div>
       <div className={styles.AddressContainer}>
         <img
-          src="/contact/address.png"
+          src="/contact/address.webp"
           alt="telephone"
           className={styles.IconTelephone}
         />{" "}
-        <p>Bonsucesso, Belo Horizonte | Minas Gerais - Brasil</p>
+        <p className={styles.Paragraph}>
+          {" "}
+          Bonsucesso, Belo Horizonte | Minas Gerais - Brasil
+        </p>
       </div>
     </section>
   );

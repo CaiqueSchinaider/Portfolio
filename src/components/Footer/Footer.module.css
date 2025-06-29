@@ -41,7 +41,7 @@
 p {
   margin: 10px;
 }
-@media screen and (width < 400px) {
+@media screen and (width < 460px) {
   .TelephoneNumberContainer,
   .EmailContainer,
   .AddressContainer {
@@ -53,7 +53,7 @@ p {
     height: 25px;
     margin-left: 20px;
   }
-  p {
-    font-size: 0.7rem !important;
+  .Paragraph {
+    font-size: clamp(0.7rem, 3vw, 1rem) !important;
   }
 }

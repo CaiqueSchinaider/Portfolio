@@ -29,7 +29,7 @@
   width: 90%;
   font-family: "Arial", sans-serif;
   font-weight: lighter;
-  font-size: clamp(25px, 1.3vw, 4rem);
+  font-size: clamp(17px, 2.5vw, 3rem);
   text-align: center;
   margin-top: 5px;
   margin-bottom: 25px;
