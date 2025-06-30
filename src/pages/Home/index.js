@@ -3,10 +3,44 @@ import Banner from "../../components/Banner";
 import InfoCard from "../../components/InfoCard";
 import { motion } from "framer-motion";
 import styles from "./Home.module.css";
+import { useState } from "react";
+import PopUpCards from "../../components/PopUpCards";
 
 function Home() {
+  const [popUpShow, setPopUpShow] = useState(null);
+
+  function HandlePopUpCards(data) {
+    if (!data) {
+      setPopUpShow(null);
+      document.body.classList.remove("no-scroll");
+      return;
+    }
+    const { linkGit, linkDeploy, projectName, haveDeploy } = data;
+    if (!popUpShow) {
+      setPopUpShow({
+        linkGit,
+        linkDeploy,
+        projectName,
+        haveDeploy,
+      });
+
+      document.body.classList.add("no-scroll");
+    }
+  }
   return (
     <main className={styles.MainContainer}>
+      {popUpShow &&
+      popUpShow.linkDeploy &&
+      popUpShow.linkGit &&
+      popUpShow.projectName ? (
+        <PopUpCards
+          hide={() => HandlePopUpCards()}
+          linkGit={popUpShow.linkGit}
+          linkDeploy={popUpShow.linkDeploy}
+          projectName={popUpShow.projectName}
+          haveDeploy={popUpShow.haveDeploy}
+        />
+      ) : null}
       <Banner />
       <section className={styles.AboutMeContainer}>
         <h1 className={styles.Title}>A little about me</h1>
@@ -52,10 +86,15 @@ function Home() {
         <section className={styles.ProjectsList}>
           <h1 className={styles.ProjectsTitle}> Projects</h1>
           <nav className={styles.ProjectsNavigation}>
-            <a
-              href="https://github.com/CaiqueSchinaider/Marketschin"
-              target="_blank"
-              rel="noopener noreferrer"
+            <div
+              onClick={() =>
+                HandlePopUpCards({
+                  linkGit: "https://github.com/CaiqueSchinaider/Marketschin",
+                  linkDeploy: "#",
+                  projectName: "MarketSchin",
+                  haveDeploy: false,
+                })
+              }
               style={{ textDecoration: "none" }}
             >
               <InfoCard
@@ -63,11 +102,16 @@ function Home() {
                 description="In my free time, I created several study projects, such as MarketSchin, an e-commerce platform currently in development. It is aimed at businesses that want to focus only on payment processing and order delivery."
                 source={"/marketschin.webp"}
               />
-            </a>
-            <a
-              href="https://schingym.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
+            </div>
+            <div
+              onClick={() =>
+                HandlePopUpCards({
+                  linkGit: "https://github.com/CaiqueSchinaider/SchinGym",
+                  linkDeploy: "https://schingym.vercel.app",
+                  projectName: "SchinGym",
+                  haveDeploy: true,
+                })
+              }
               style={{ textDecoration: "none" }}
             >
               <InfoCard
@@ -75,12 +119,17 @@ function Home() {
                 description="SchinGym is a project aimed at helping people who practice weight training manage their workouts. It allows them to edit their workout plans, track body progress with easy-to-understand statistics, and increase weights in an intuitive way."
                 source={"/schingym.webp"}
               />
-            </a>
-            <a
-              href="https://cruzeiro-sports.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
+            </div>
+            <div
               style={{ textDecoration: "none" }}
+              onClick={() =>
+                HandlePopUpCards({
+                  linkGit: "https://github.com/CaiqueSchinaider/CruzeiroSports",
+                  linkDeploy: "https://cruzeiro-sports.vercel.app",
+                  projectName: "Cruzeiro Sports + Lineup",
+                  haveDeploy: true,
+                })
+              }
             >
               <InfoCard
                 title="Lineup To Cruzeiro Sports"
@@ -89,7 +138,7 @@ Allows creating possible lineups for the Cruzeiro team to assist live broadcasts
 Used by Diogo in some live streams to display these lineups."
                 source={"/cruzeirosports.webp"}
               />
-            </a>
+            </div>
           </nav>
         </section>
       </section>

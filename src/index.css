@@ -22,8 +22,12 @@ body {
   a {
     -webkit-tap-highlight-color: transparent;
   }
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
-
+body.no-scroll {
+  overflow: hidden;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
