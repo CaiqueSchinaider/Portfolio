@@ -15,13 +15,14 @@ function Home() {
       document.body.classList.remove("no-scroll");
       return;
     }
-    const { linkGit, linkDeploy, projectName, haveDeploy } = data;
+    const { linkGit, linkDeploy, projectName, haveDeploy, haveCode } = data;
     if (!popUpShow) {
       setPopUpShow({
         linkGit,
         linkDeploy,
         projectName,
         haveDeploy,
+        haveCode,
       });
 
       document.body.classList.add("no-scroll");
