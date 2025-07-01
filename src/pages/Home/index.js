@@ -106,7 +106,7 @@ function Home() {
             <div
               onClick={() =>
                 HandlePopUpCards({
-                  linkGit: "https://github.com/CaiqueSchinaider/SchinGym",
+                  linkGit: "https://github.com/CaiqueSchinaider/SchinGymExample",
                   linkDeploy: "https://schingym.vercel.app",
                   projectName: "SchinGym",
                   haveDeploy: true,
