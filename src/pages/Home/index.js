@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import styles from "./Home.module.css";
 import { useState } from "react";
 import PopUpCards from "../../components/PopUpCards";
+import { code } from "framer-motion/client";
 
 function Home() {
   const [popUpShow, setPopUpShow] = useState(null);
@@ -40,6 +41,7 @@ function Home() {
           linkDeploy={popUpShow.linkDeploy}
           projectName={popUpShow.projectName}
           haveDeploy={popUpShow.haveDeploy}
+          haveCode={popUpShow.haveCode}
         />
       ) : null}
       <Banner />
@@ -94,6 +96,7 @@ function Home() {
                   linkDeploy: "#",
                   projectName: "MarketSchin",
                   haveDeploy: false,
+                  haveCode: true,
                 })
               }
               style={{ textDecoration: "none" }}
