@@ -1,7 +1,14 @@
 import { style } from "framer-motion/client";
 import styles from "./PopUpCards.module.css";
 
-function PopUpCards({ linkGit, linkDeploy, projectName, hide, haveDeploy }) {
+function PopUpCards({
+  linkGit,
+  linkDeploy,
+  projectName,
+  hide,
+  haveDeploy,
+  haveCode,
+}) {
   return (
     <main className={styles.PopUpCardsBackground}>
       <section className={styles.PopUpCardsBody}>
@@ -23,23 +30,26 @@ function PopUpCards({ linkGit, linkDeploy, projectName, hide, haveDeploy }) {
         </h1>
         {/* //////////////// */}
         <section className={styles.PopUpCardsLinks}>
-          <a
-            className={styles.PopUpCardsLinkContainer}
-            href={linkGit}
-            target="_blank"
-            rel="noopener"
-          >
-            <div className={styles.PopUpCardsLinkBox}>
-              <p className={styles.PopUpCardsParagraph}>Code</p>
-              <div className={styles.ImageBox}>
-                <img
-                  className={styles.PopUpCardsImage}
-                  src="/github.webp"
-                  alt="icon git"
-                />
+          {haveCode ? (
+            <a
+              className={styles.PopUpCardsLinkContainer}
+              href={linkGit}
+              target="_blank"
+              rel="noopener"
+            >
+              <div className={styles.PopUpCardsLinkBox}>
+                <p className={styles.PopUpCardsParagraph}>Code</p>
+                <div className={styles.ImageBox}>
+                  <img
+                    className={styles.PopUpCardsImage}
+                    src="/github.webp"
+                    alt="icon git"
+                  />
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          ) : null}
+
           {haveDeploy ? (
             <a
               className={styles.PopUpCardsLinkContainer}

@@ -106,10 +106,12 @@ function Home() {
             <div
               onClick={() =>
                 HandlePopUpCards({
-                  linkGit: "https://github.com/CaiqueSchinaider/SchinGymExample",
+                  linkGit:
+                    "https://github.com/CaiqueSchinaider/SchinGymExample",
                   linkDeploy: "https://schingym.vercel.app",
                   projectName: "SchinGym",
                   haveDeploy: true,
+                  haveCode: true,
                 })
               }
               style={{ textDecoration: "none" }}
@@ -128,6 +130,7 @@ function Home() {
                   linkDeploy: "https://cruzeiro-sports.vercel.app",
                   projectName: "Cruzeiro Sports + Lineup",
                   haveDeploy: true,
+                  haveCode: false,
                 })
               }
             >
