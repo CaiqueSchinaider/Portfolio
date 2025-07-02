@@ -93,13 +93,13 @@ function Home() {
               onClick={() =>
                 HandlePopUpCards({
                   linkGit: "https://github.com/CaiqueSchinaider/Marketschin",
-                  linkDeploy: "https://marketschin-j3jo.vercel.app/home",
+                  linkDeploy: "https://marketschin-j3jo.vercel.app",
                   projectName: "MarketSchin",
                   haveDeploy: true,
                   haveCode: true,
                 })
               }
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", cursor: "pointer" }}
             >
               <InfoCard
                 title="MarketSchin"
@@ -118,7 +118,7 @@ function Home() {
                   haveCode: true,
                 })
               }
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", cursor: "pointer" }}
             >
               <InfoCard
                 title="SchinGym"
@@ -127,7 +127,7 @@ function Home() {
               />
             </div>
             <div
-              style={{ textDecoration: "none" }}
+              style={{ textDecoration: "none", cursor: "pointer" }}
               onClick={() =>
                 HandlePopUpCards({
                   linkGit: "https://github.com/CaiqueSchinaider/CruzeiroSports",
