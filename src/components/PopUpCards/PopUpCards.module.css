@@ -28,6 +28,7 @@
   background-color: #131313;
   max-width: 600px;
   border: 2px solid #ffffffc2;
+  border-radius: 20px;
 }
 .PopUpCardsTitle {
   position: relative;
