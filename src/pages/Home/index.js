@@ -93,9 +93,9 @@ function Home() {
               onClick={() =>
                 HandlePopUpCards({
                   linkGit: "https://github.com/CaiqueSchinaider/Marketschin",
-                  linkDeploy: "#",
+                  linkDeploy: "https://marketschin-j3jo.vercel.app/home",
                   projectName: "MarketSchin",
-                  haveDeploy: false,
+                  haveDeploy: true,
                   haveCode: true,
                 })
               }
