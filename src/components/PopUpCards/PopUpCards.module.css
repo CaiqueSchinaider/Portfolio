@@ -29,7 +29,6 @@
   max-width: 600px;
   border: 2px solid #ffffffc2;
   border-radius: 20px;
-  overflow: hidden;
 }
 .PopUpCardsTitle {
   position: relative;
@@ -41,7 +40,7 @@
   font-size: clamp(2rem, 5vw, 3.8rem);
   height: 80px;
   color: #ffffff;
-
+  border-radius: 20px;
   border-bottom: 2px solid #ffffffc2;
   box-shadow: inset 0px -5px 20px 0px #000000f0;
 }
