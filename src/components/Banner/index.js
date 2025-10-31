@@ -5,8 +5,7 @@ function Banner() {
       <div className={styles.PresentationContainer}>
         <h1> Welcome</h1>
         <p>
-          My name is
-          <strong style={{ color: "gold" }}>Caique Schinaider</strong>, and it
+          My name is <strong style={{ color: "gold" }}>Caique Schinaider</strong>, and it
           will be a pleasure to turn your project idea into reality for your
           business.
         </p>
