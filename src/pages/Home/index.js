@@ -48,10 +48,9 @@ function Home() {
       <section className={styles.AboutMeContainer}>
         <h1 className={styles.Title}>A little about me</h1>
         <p className={styles.DescriptionContainer}>
-          I have always been curious, and that led me to dive deeper into
-          technology to understand how things work. Programming turned out to be
-          a world of its own, where my ideas can be put on the table, or rather,
-          into lines of code.
+          I have strong analytical skills to understand client needs and goals.
+          Each project is unique and exclusive, and my commitment is to deliver
+          effective results.
         </p>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -61,26 +60,26 @@ function Home() {
         >
           <div className={styles.AttributesList}>
             <InfoCard
-              title="Where I Am Now?"
-              description="I'm in the process of acquiring experiences that drive my growth exponentially, having had the opportunity at 16 to work at Offerwise as a Help Desk, a company that allowed me to see firsthand how this entire world operates."
+              title="Why hire my services?"
+              description="I work with modern technologies that drive leading brands, including React.js, Next.js, Tailwind, and others. Each project is unique and exclusive, and my commitment is to deliver effective results through API integration and cloud solutions."
               source={"/question.webp"}
               tabIndexValue="1"
             />
             <InfoCard
-              title="How I Got Started at Offerwise"
-              description="I quickly adapted to the work in a methodical way, diving into hardware and software. I assisted employees with background issues, ensuring a smooth workflow. This drove me to create projects that simplify processes or add value to people."
+              title="Experience "
+              description="Although I have been creating projects since I was 15, I began my professional career at 16, joining the Support and Systems Analysis team at Offerwise, and later moving to the programming team. In parallel, I work as a freelancer on customized projects under my supervision."
               source={"/offerwise.webp"}
               tabIndexValue="2"
             />
             <InfoCard
               title="My Objective"
-              description="My objective is to gain more experience in this field, further solidifying all the knowledge I've gained, while evolving and adding value wherever I go. Seeing my effort return as progress is my fuel."
+              description="My goal is to associate my name with major projects and institutions that value quality and commitment to the product, leveraging teamwork and dedication to the cause to deliver tangible results."
               source={"/goal.webp"}
               tabIndexValue="3"
             />
             <InfoCard
               title="Education"
-              description="I have been self-studying, relying on free courses and available online documentation, gradually expanding my knowledge and ability to create solutions. I have experience with JavaScript, CSS, HTML, React, and Firebase (FireStorage and Authentication). I am currently starting to learn TypeScript."
+              description="I value self-directed learning, which has been my main driver in the industry, allowing me to independently master the key languages and frameworks used by major companies, such as React.js, React Native, Next.js, TypeScript, and JavaScript, as well as create sophisticated visual solutions with Tailwind and CVA (Class Variance Authority)."
               source={"/education.webp"}
               tabIndexValue="4"
             />
@@ -140,9 +139,7 @@ function Home() {
             >
               <InfoCard
                 title="Lineup To Cruzeiro Sports"
-                description="Personal project created by me, a fan of YouTuber Diogo Medeiros (Cruzeiro Sports).
-Allows creating possible lineups for the Cruzeiro team to assist live broadcasts, especially in pre-game shows.
-Used by Diogo in some live streams to display these lineups."
+                description="Personal project created by me with the purpose of developing a framework for creating possible lineups for the Cruzeiro team, supporting live broadcasts on the Cruzeiro Sports channel, especially in pre-game shows. It was used by Diogo Medeiros in some live streams to display these lineups."
                 source={"/cruzeirosports.webp"}
               />
             </div>
