@@ -8,7 +8,9 @@ function InfoCard({ source, title, description, tabIndexValue }) {
       </picture>
       <div className={styles.CardDescription}>
         <h1>{title}</h1>
+        <div className={styles.CardDescriptionP}>
         <p>{description}</p>
+        </div>
       </div>
     </section>
   );
