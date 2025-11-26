@@ -78,8 +78,8 @@ function Home() {
               tabIndexValue="3"
             />
             <InfoCard
-              title="Education"
-              description="I value self-directed learning, which has been my main driver in the industry, allowing me to independently master the key languages and frameworks used by major companies, such as React.js, React Native, Next.js, TypeScript, and JavaScript, as well as create sophisticated visual solutions with Tailwind and CVA (Class Variance Authority)."
+              title="Skills"
+              description="Web and mobile developer with experience in React.js, React Native, Node.js, and TypeScript, building visual solutions with Tailwind and CVA. Experience with REST APIs, Firebase, AWS S3, HTML, CSS, JavaScript, and Git/GitHub. Knowledge in Help Desk, strong communication skills, and intermediate English."
               source={"/education.webp"}
               tabIndexValue="4"
             />
@@ -139,7 +139,7 @@ function Home() {
             >
               <InfoCard
                 title="Lineup To Cruzeiro Sports"
-                description="Personal project created by me with the purpose of developing a framework for creating possible lineups for the Cruzeiro team, supporting live broadcasts on the Cruzeiro Sports channel, especially in pre-game shows. It was used by Diogo Medeiros in some live streams to display these lineups."
+                description="Personal project created by me with the purpose of developing a framework for creating possible lineups for the Cruzeiro team, supporting live broadcasts on the Cruzeiro Sports channel. It was used by Diogo Medeiros in some live streams to display these lineups."
                 source={"/cruzeirosports.webp"}
               />
             </div>
